@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50sp"
+            android:text="General"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:layout_marginStart="150sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="248dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="90sp"
+            android:layout_marginTop="100sp"
+            android:text="Find answers to the general questions asked about Pinlearn below.
+You can always reach out to us if you can’t find your answers here."
+            android:textSize="12sp" />
+        <LinearLayout
+            android:id="@+id/l1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="180sp">
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/RV1"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/tech"
+           android:layout_below="@id/l1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="150sp"
+                android:layout_marginTop="50sp"
+                android:text="Technical"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="255dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="90sp"
+                android:layout_marginTop="100sp"
+                android:text="Learn everything technical about Pinlearn here"
+                android:textSize="12sp" />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_below="@id/tech"
+            android:id="@+id/l2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="20sp">
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/RV2"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/billing"
+            android:layout_below="@id/l2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="150sp"
+                android:layout_marginTop="50sp"
+                android:text="Billing"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="255dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="90sp"
+                android:layout_marginTop="100sp"
+                android:text="Know everything about billing process of Pinlearn, and how you can
+get Pinlearn’s software to build your platform."
+                android:textSize="12sp" />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_below="@id/billing"
+            android:id="@+id/l3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="20sp">
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/RV3"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/others"
+            android:layout_below="@id/l3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="150sp"
+                android:layout_marginTop="50sp"
+                android:text="Others"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="255dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="90sp"
+                android:layout_marginTop="100sp"
+                android:text="Get all other answers to your questions about Pinlearn here."
+                android:textSize="12sp" />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_below="@id/others"
+            android:id="@+id/l4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="20sp">
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/RV4"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+
+</ScrollView>
